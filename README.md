@@ -13,7 +13,7 @@
 同时该游戏还增加了背景音乐
 
 ## 以下为游戏图片
-
+![这里随便写文字](https://github.com/coolling/memory/blob/master/src/img/m1.gif)
 
 
 
