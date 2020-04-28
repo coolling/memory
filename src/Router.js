@@ -10,7 +10,7 @@
 import Index from "./pages/Index";
 import Play from "./pages/Play";
 import Rush from "./pages/Rush";
-
+import Start from "./pages/Start";
 import React from "react";
 import { HashRouter, Route, Switch } from "react-router-dom";
 
@@ -20,6 +20,7 @@ const BasicRoute = () => (
       <Route exact path="/" component={Index} />
       <Route exact path="/play" component={Play} />
       <Route exact path="/rush" component={Rush} />
+     <Route exact path="/start" component={Start} />
     </Switch>
   </HashRouter>
 );

@@ -1,0 +1,122 @@
+.index_title {
+  margin: 0px;
+  text-align: left;
+
+  letter-spacing: 0px;
+  color: #0b0b0b;
+  opacity: 0.51;
+  font-size: 117px;
+  font-weight: normal;
+  font-family: STSong;
+}
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+}
+.pai{
+  position: relative;
+  left:70%;
+}
+#root > div {
+  height: 100%;
+}
+.index {
+  background-image: url("../img/index-bgi.jpg");
+  background-size: cover;
+}
+.index_play {
+    width: 83%;
+  height: 140px;
+  background: #e5a7a7 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 0.63;
+  text-align: center;
+  letter-spacing: 0px;
+
+  font-size: 58px;
+  font-weight: normal;
+  font-family: STSong;
+  margin: 30px;
+}
+.index_rush {
+  width: 83%;
+  height: 140px;
+  background: #e9ebb8 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 0.63;
+  text-align: center;
+  letter-spacing: 0px;
+
+  font-size: 58px;
+  font-weight: normal;
+  font-family: STSong;
+  margin: 30px;
+}
+.index_button{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 45%;
+    left: 55%;
+    top:120px;
+}
+.tanwindow {
+  background: #f5f5f5 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  opacity: 0.81;
+  width: 70%;
+  height: 540px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  left: 15%;
+  display: flex;
+  flex-direction: column
+}
+.tan_head{
+height: 10%;
+position: absolute;
+top: 0px;
+font-size: 38px;
+font-weight: normal;
+font-family: STSong;
+opacity: 0.8;
+
+}
+.tan_type{
+  width: 100%;
+  display: flex;
+  flex-direction: row
+}
+.tan_atype{
+  width: 25%;
+  text-align: center;
+  height: 90%;
+  position: relative;
+}
+.tan_title{
+  
+  font-size: 22px;
+font-weight: normal;
+border: 1px solid black;
+margin:30px;
+border-radius: 10px
+}
+.tan_result{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 400px;
+  overflow: scroll
+}
+.aresult{
+  margin: 15px;
+  font-size: 18px;
+font-weight: normal;
+font-family: STSong;
+}

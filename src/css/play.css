@@ -1,0 +1,74 @@
+.play {
+  background-size: cover;
+
+  background: transparent url("../img/bgi3.jpg") 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.play_choose {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 43%;
+  left: 57%;
+  top: 170px;
+}
+.choose_easy {
+    width: 81%;
+  height: 110px;
+  background: #fafcd0 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  text-align: center;
+  
+  font-size: 83px;
+  font-weight: normal;
+  font-family: STSong;
+  letter-spacing: 0px;
+  color: #0b0b0b;
+  opacity: 1;
+  margin: 15px;
+}
+.choose_medium {
+    width: 81%;
+  height: 110px;
+  background: #f2a4a4 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  text-align: center;
+  margin: 15px;
+  font-size: 83px;
+  font-weight: normal;
+  font-family: STSong;
+  letter-spacing: 0px;
+  color: #0b0b0b;
+  opacity: 1;
+}
+.choose_hard {
+  width: 81%;
+  height: 110px;
+  background: #cdf4ec 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  text-align: center;
+  margin: 15px;
+  font-size: 83px;
+  font-weight: normal;
+  font-family: STSong;
+  letter-spacing: 0px;
+  color: #0b0b0b;
+  opacity: 1;
+}
+.back{
+    font-size: 40px;
+  font-weight: normal;
+  font-family: STSong;
+  padding: 15px;
+  color: #0b0b0b;
+ 
+}
+a{
+    text-decoration:none;
+}
+.play .back{
+    position: relative;
+    margin-left: 90%
+}
