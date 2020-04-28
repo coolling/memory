@@ -66,16 +66,14 @@ export default class Rush extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentDidMount=()=> {
    document.getElementById("autoplay2").play()
     if(url.parse(this.props.location.search, true).query.result){
       var re =parseInt(url.parse(this.props.location.search, true).query.result) 
       this.setState({
         counts:re+1
-      })
-
-    }
-    this.timerID = setInterval(() => this.tick(), 1000);
+      },()=>{
+        this.timerID = setInterval(() => this.tick(), 1000);
 
     var flip = [];
 
@@ -113,7 +111,52 @@ export default class Rush extends React.Component {
           card.style.order = randomPos;
         });
       }
-    );
+    )
+  
+      })
+
+    }else{
+      this.timerID = setInterval(() => this.tick(), 1000);
+
+      var flip = [];
+  
+      if (this.state.counts <= 5) {
+        for (let i = 0; i < 12; i++) {
+          flip.push(this.state.imgs[i]);
+        }
+        this.setState({
+          time: this.state.time - 5 * (this.state.counts - 1)
+        });
+      } else if (this.state.counts <= 10) {
+        for (let i = 0; i < 20; i++) {
+          flip.push(this.state.imgs[i]);
+        }
+        this.setState({
+          time: this.state.time - 3 * (this.state.counts - 6)
+        });
+      } else if (this.state.counts <= 15) {
+        for (let i = 0; i < 24; i++) {
+          flip.push(this.state.imgs[i]);
+        }
+        this.setState({
+          time: this.state.time - 3 * (this.state.counts - 11)
+        });
+      }
+      console.log(flip);
+      this.setState(
+        {
+          flip: flip
+        },
+        () => {
+          const cards = document.querySelectorAll(".memory-card");
+          cards.forEach(card => {
+            let randomPos = Math.floor(Math.random() * 12);
+            card.style.order = randomPos;
+          });
+        }
+      );
+    }
+    
   }
   tanwindow1 = text => {
     return (
