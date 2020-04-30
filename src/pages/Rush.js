@@ -378,11 +378,14 @@ export default class Rush extends React.Component {
   };
   checkForMatch = () => {
     var all = true;
-    for (var i = 0; i < this.state.flip.length && i !== 12 && i !== 13; i++) {
-      if (this.state.flip[i].flipped !== true) {
-        all = false;
-        break;
+    for (var i = 0; i < this.state.flip.length; i++) {
+      if(i!==12&&i!==13){
+        if (this.state.flip[i].flipped !== true) {
+          all = false;
+          break;
+        }
       }
+      
     }
     if (all) {
       clearInterval(this.timerID);
