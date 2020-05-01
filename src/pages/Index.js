@@ -16,7 +16,17 @@ export default class Index extends React.Component {
     };
   }
   componentDidMount = () => {
-  document.getElementById("autoplay1").play()
+    const playPromise = document.getElementById("autoplay1").play()
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {
+          // console.log("audio played auto");
+        })
+        .catch(() => {
+          // console.log("playback prevented");
+        });
+    }
+  
     if(localStorage.getItem("easy")){
       var a = JSON.parse(localStorage.getItem("easy")).result;
       a=a.sort(function (x, y) {
